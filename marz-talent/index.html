@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f2eb">
+  <meta name="description" content="MARZ TALENT is a new platform concept for emerging models and actors to take on creative challenges, with a separate open showcase for singing and dance.">
+  <title>MARZ TALENT — Make your first move</title>
+  <style>
+    :root{--paper:#f3f2eb;--ink:#18211e;--muted:#68716a;--line:#d7d9d0;--lime:#d9ff72;--violet:#c7b7ff;--white:#fffefa;--serif:Georgia,'Times New Roman',serif;--sans:Arial,Helvetica,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1180px,calc(100% - 48px));margin:0 auto}.eyebrow{font-size:11px;letter-spacing:.17em;text-transform:uppercase;font-weight:700}.site-header{height:82px;display:flex;align-items:center;border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between}.brand{display:flex;gap:10px;align-items:center;font-size:14px;font-weight:800;letter-spacing:.12em}.brand-mark{width:27px;height:27px;border-radius:50%;background:var(--ink);color:var(--lime);display:grid;place-items:center;font-family:var(--serif);font-size:18px;letter-spacing:0}.nav-links{display:flex;align-items:center;gap:32px;font-size:13px;color:#3e4842}.nav-links a:hover{color:#000}.nav-cta,.button{border:1px solid var(--ink);border-radius:4px;padding:13px 18px;font-size:12px;font-weight:700;letter-spacing:.02em;display:inline-flex;align-items:center;justify-content:center;gap:12px;transition:.2s ease}.nav-cta:hover,.button:hover{background:var(--ink);color:white}.menu-toggle{display:none;background:none;border:0;font-size:24px;color:var(--ink)}
+    .hero{padding:76px 0 86px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:54px;align-items:center}.hero-copy{max-width:590px}.hero .eyebrow{display:flex;align-items:center;gap:10px;color:#536059}.signal{width:7px;height:7px;border-radius:50%;background:#83a733;box-shadow:0 0 0 4px #e3edc4}.hero h1{font-family:var(--serif);font-size:clamp(52px,6vw,82px);font-weight:400;line-height:.98;letter-spacing:-.055em;margin:24px 0}.hero h1 em{font-weight:400;color:#586253}.hero-copy p{font-size:17px;line-height:1.65;color:#58615a;max-width:490px;margin:0 0 30px}.actions{display:flex;gap:12px;flex-wrap:wrap}.button.primary{background:var(--ink);color:white}.button.primary:hover{background:#34433b}.button .arrow{font-size:17px;line-height:10px}.launch-note{font-size:11px;color:#727971;margin-top:20px;letter-spacing:.02em}.visual{min-height:435px;position:relative;display:grid;place-items:center}.spotlight{width:min(100%,490px);height:420px;border-radius:3px;background:#dce4d6;position:relative;overflow:hidden;isolation:isolate}.spotlight:before{content:"";position:absolute;width:370px;height:370px;border-radius:50%;background:var(--lime);right:-78px;top:-80px;z-index:-1}.spotlight:after{content:"";position:absolute;inset:0;background:linear-gradient(145deg,transparent 44%,rgba(24,33,30,.12))}.frame-line{position:absolute;inset:22px;border:1px solid rgba(24,33,30,.25)}.poster-type{position:absolute;left:40px;top:38px;z-index:2}.poster-type .eyebrow{color:#38443b}.poster-type strong{display:block;font-family:var(--serif);font-size:31px;line-height:1.02;margin-top:13px;font-weight:400;letter-spacing:-.04em}.abstract-person{position:absolute;left:50%;bottom:-12px;transform:translateX(-42%);width:255px;height:330px;z-index:1}.abstract-person .head{position:absolute;width:112px;height:145px;border-radius:48% 48% 44% 44%;background:#b57456;left:79px;top:10px;transform:rotate(-4deg)}.abstract-person .hair{position:absolute;width:139px;height:158px;border-radius:53% 54% 35% 35%;background:#362a27;left:65px;top:-5px;clip-path:polygon(0 0,100% 0,96% 100%,79% 62%,68% 42%,51% 68%,35% 100%,24% 56%,0 100%);z-index:2}.abstract-person .body{position:absolute;bottom:-10px;left:13px;width:230px;height:210px;border-radius:50% 50% 0 0;background:#8d93c7;clip-path:polygon(29% 0,71% 0,100% 100%,0 100%)}.abstract-person .neck{position:absolute;top:120px;left:116px;width:40px;height:57px;background:#b57456;z-index:1}.abstract-person .shine{position:absolute;width:85px;height:10px;border-radius:99px;background:rgba(255,255,255,.3);transform:rotate(-42deg);top:52px;left:37px;z-index:3}.tag{position:absolute;z-index:4;background:var(--white);padding:11px 14px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;box-shadow:0 8px 22px #17221a12}.tag.one{right:24px;top:150px;transform:rotate(4deg)}.tag.two{left:30px;bottom:38px;transform:rotate(-3deg);background:var(--violet)}.index-mark{position:absolute;right:41px;bottom:35px;font-family:var(--serif);font-size:64px;line-height:1;opacity:.42;z-index:2}
+    .ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:19px 0}.ticker-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;color:#59645c;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700}.ticker span{display:flex;align-items:center;gap:12px}.ticker i{font-style:normal;color:#9aab67;font-size:17px}
+    .section{padding:100px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:42px}.section-head h2,.statement h2{font-family:var(--serif);font-weight:400;letter-spacing:-.04em;font-size:clamp(38px,4.4vw,58px);line-height:1.02;margin:14px 0 0}.section-head p{max-width:360px;color:var(--muted);line-height:1.65;font-size:14px;margin:0}.path-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.path-card{min-height:335px;padding:31px;display:flex;flex-direction:column;position:relative;overflow:hidden}.path-card.contest{background:var(--ink);color:var(--white)}.path-card.showcase{background:#e5e2f0}.path-card .eyebrow{opacity:.7}.path-card h3{font-family:var(--serif);font-weight:400;font-size:39px;letter-spacing:-.04em;line-height:1.02;max-width:340px;margin:23px 0 12px;position:relative;z-index:1}.path-card p{max-width:385px;font-size:14px;line-height:1.65;opacity:.76;position:relative;z-index:1;margin:0}.path-footer{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:35px;position:relative;z-index:1;font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:700}.circle-art{position:absolute;width:170px;height:170px;border-radius:50%;right:-35px;top:16px;border:1px solid #ffffff32}.circle-art:before,.circle-art:after{content:"";position:absolute;border-radius:50%;border:1px solid #ffffff32}.circle-art:before{inset:17px}.circle-art:after{inset:36px}.showcase .circle-art{border-color:#817a9a55}.showcase .circle-art:before,.showcase .circle-art:after{border-color:#817a9a55}.path-num{font-family:var(--serif);font-size:68px;position:absolute;right:35px;bottom:35px;opacity:.13;line-height:1}
+    .statement{background:#e8eadf;padding:80px 0}.statement-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:10%;align-items:start}.statement .eyebrow{color:#667260}.statement h2{max-width:680px;margin:13px 0 20px}.statement p{max-width:620px;color:#59645c;line-height:1.75;font-size:15px;margin:0}.statement-aside{font-size:12px;line-height:1.6;color:#657066;border-left:1px solid #bdc5b7;padding-left:20px;margin-top:12px}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);margin-top:42px}.step{padding:23px 28px 0 0}.step:not(:first-child){padding-left:28px;border-left:1px solid var(--line)}.step .n{font-family:var(--serif);font-size:18px;color:#819264}.step h3{font-size:16px;margin:18px 0 9px}.step p{font-size:13px;color:var(--muted);line-height:1.65;margin:0;max-width:290px}
+    .values{padding:80px 0;background:var(--ink);color:var(--white)}.values-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:10%;align-items:start}.values h2{font-family:var(--serif);font-weight:400;letter-spacing:-.04em;font-size:44px;line-height:1.05;margin:14px 0}.values .eyebrow{color:var(--lime)}.value-list{display:grid;grid-template-columns:1fr 1fr;gap:25px 32px;padding-top:7px}.value-item{border-top:1px solid #ffffff2c;padding-top:16px}.value-item strong{display:block;font-size:14px;margin-bottom:8px}.value-item p{margin:0;color:#b6c0b8;font-size:12px;line-height:1.6}.safety{margin-top:27px;padding:17px 18px;background:#ffffff0b;border:1px solid #ffffff25;display:flex;gap:14px;align-items:flex-start;color:#c3ccc4;font-size:12px;line-height:1.6}.safety b{color:var(--lime);font-size:16px;line-height:1}
+    .closing{padding:90px 0 95px;text-align:center}.closing .eyebrow{color:#647066}.closing h2{font-family:var(--serif);font-size:clamp(42px,5vw,64px);font-weight:400;letter-spacing:-.045em;line-height:1.03;max-width:690px;margin:18px auto}.closing p{color:var(--muted);font-size:14px;line-height:1.7;max-width:490px;margin:0 auto 27px}.closing .button{margin:0 auto}.closing-note{font-size:10px;color:#80877f;margin-top:14px}
+    footer{border-top:1px solid var(--line);padding:25px 0 32px}.footer-top{display:flex;justify-content:space-between;gap:25px;align-items:center}.footer-copy{font-size:11px;color:#727b73}.footer-links{display:flex;gap:21px;font-size:11px;color:#59645c}.footnote{font-size:10px;color:#889088;margin-top:20px;max-width:600px;line-height:1.5}
+    @media(max-width:780px){.wrap{width:min(100% - 36px,620px)}.site-header{height:70px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:70px;left:0;right:0;background:var(--paper);padding:20px 24px 24px;border-bottom:1px solid var(--line);z-index:10;flex-direction:column;align-items:stretch;gap:20px}.nav-links.open{display:flex}.nav-cta{justify-content:center}.hero{padding:48px 0 62px}.hero-grid{grid-template-columns:1fr;gap:32px}.hero h1{font-size:58px}.visual{min-height:350px}.spotlight{height:350px}.abstract-person{transform:translateX(-38%) scale(.85);transform-origin:bottom}.section{padding:72px 0}.section-head{display:block}.section-head p{margin-top:18px}.path-grid{grid-template-columns:1fr}.path-card{min-height:310px}.statement{padding:64px 0}.statement-grid,.values-grid{grid-template-columns:1fr;gap:25px}.statement-aside{margin-top:0}.steps{grid-template-columns:1fr;gap:0}.step,.step:not(:first-child){padding:19px 0 22px;border-left:0;border-bottom:1px solid var(--line)}.step:first-child{padding-top:20px}.step h3{margin:10px 0 7px}.values{padding:65px 0}.value-list{gap:24px 18px}.closing{padding:70px 0 75px}.footer-top{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap}}
+    @media(max-width:420px){.hero h1{font-size:49px}.hero-copy p{font-size:15px}.visual{min-height:315px}.spotlight{height:315px}.poster-type{left:30px;top:30px}.poster-type strong{font-size:27px}.abstract-person{transform:translateX(-40%) scale(.76)}.tag.one{right:18px;top:137px}.tag.two{left:21px;bottom:28px}.path-card{padding:24px;min-height:300px}.path-card h3{font-size:34px}.value-list{grid-template-columns:1fr}.ticker-inner{flex-wrap:wrap;justify-content:flex-start;gap:14px 22px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="MARZ TALENT home"><span class="brand-mark">M</span><span>MARZ TALENT</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#paths">Ways to take part</a><a href="#process">How it works</a><a href="#about">Our approach</a>
+        <a class="nav-cta" href="#launch">Platform preview <span class="arrow">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="signal"></span> MARZ TECHNOLOGIES · EMERGING TALENT</div>
+          <h1>Your first<br>frame. Your<br><em>next move.</em></h1>
+          <p>A creative space for new models and actors to step into the spotlight, take on a prompt, and show what they can do.</p>
+          <div class="actions"><a class="button primary" href="#paths">Explore the experience <span class="arrow">↘</span></a><a class="button" href="#process">How it works</a></div>
+          <div class="launch-note">Platform in development · Entries are not open yet</div>
+        </div>
+        <div class="visual" aria-label="Illustrated talent portrait with creative direction notes" role="img">
+          <div class="spotlight"><div class="frame-line"></div><div class="poster-type"><span class="eyebrow">A place to begin</span><strong>Show us<br>your point<br>of view.</strong></div><div class="abstract-person"><div class="hair"></div><div class="head"></div><div class="neck"></div><div class="body"></div><div class="shine"></div></div><div class="tag one">Talent, in progress</div><div class="tag two">Your turn to create</div><div class="index-mark">01</div></div>
+        </div>
+      </div>
+    </section>
+    <div class="ticker"><div class="wrap ticker-inner"><span>Models <i>✳</i></span><span>Actors <i>✳</i></span><span>Fresh perspectives <i>✳</i></span><span>Room to grow <i>✳</i></span></div></div>
+    <section class="section" id="paths">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">Two ways to show up</div><h2>Choose your<br>creative lane.</h2></div><p>Take part in a judged challenge, or share a performance just because you love doing it. One path never changes the other.</p></div>
+        <div class="path-grid">
+          <article class="path-card contest"><div class="eyebrow">01 / The competition</div><div class="circle-art"></div><h3>Photo prompts<br>& acting scenes.</h3><p>Respond to a creative photo direction or perform a short role-play scene. Enter one challenge or both, then receive a clear judging result.</p><div class="path-footer"><span>Model + acting challenges</span><span>↗</span></div><span class="path-num">01</span></article>
+          <article class="path-card showcase"><div class="eyebrow">02 / The open showcase</div><div class="circle-art"></div><h3>Sing it. Dance it.<br>Share your thing.</h3><p>Post a singing or dancing clip as its own creative showcase. These clips are not scored and never count toward competition results.</p><div class="path-footer"><span>Separate from judging</span><span>↗</span></div><span class="path-num">02</span></article>
+        </div>
+      </div>
+    </section>
+    <section class="statement" id="about">
+      <div class="wrap statement-grid">
+        <div><div class="eyebrow">The idea behind Marz Talent</div><div class="statement-aside">A first step can feel big. The platform is being designed to make it easier to take that step with a clear brief and a welcoming place to begin.</div></div>
+        <div><h2>Potential deserves<br>a place to be seen.</h2><p>Marz Talent is being built for people at the start of their journey: first-time models, aspiring actors, and performers who want a low-pressure way to practice, participate, and make a body of work they can be proud of.</p></div>
+      </div>
+    </section>
+    <section class="section" id="process">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">A simple first step</div><h2>Make something.<br>Put it out there.</h2></div><p>The planned experience keeps the brief clear and the next step easy to understand, whether you enter or share a performance.</p></div>
+        <div class="steps">
+          <article class="step"><span class="n">01</span><h3>Pick your path</h3><p>Choose a model or acting challenge, or head to the separate singing and dance showcase.</p></article>
+          <article class="step"><span class="n">02</span><h3>Create your submission</h3><p>Use the prompt as your starting point and bring your own style, presence, and interpretation.</p></article>
+          <article class="step"><span class="n">03</span><h3>Share when entries open</h3><p>Submit through the platform once the first challenge and participation details are announced.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="values">
+      <div class="wrap values-grid">
+        <div><div class="eyebrow">A better first experience</div><h2>Clear prompts.<br>Respectful space.</h2></div>
+        <div><div class="value-list">
+          <div class="value-item"><strong>Creativity over connections</strong><p>Show what you bring through the work, even if this is your first opportunity.</p></div>
+          <div class="value-item"><strong>Separate ways to participate</strong><p>Competition entries and open showcase clips have different purposes and outcomes.</p></div>
+          <div class="value-item"><strong>Transparent judging</strong><p>Challenge criteria and entry requirements will be shared before submissions open.</p></div>
+          <div class="value-item"><strong>Control over your work</strong><p>Submission, display, and promotional permissions will be explained before anyone uploads.</p></div>
+        </div><div class="safety"><b>✳</b><span>Uploads are not available yet. The site will explain how media is handled before any submissions are collected.</span></div></div>
+      </div>
+    </section>
+    <section class="closing" id="launch">
+      <div class="wrap"><div class="eyebrow">The first call is coming later</div><h2>Keep your point of view.<br>We’ll make room for it.</h2><p>We’re building the first version of Marz Talent now. Challenge dates, eligibility, and entry details will be shared here when they’re ready.</p><a class="button primary" href="#top">Back to the beginning <span class="arrow">↑</span></a><div class="closing-note">This is a preview of the planned platform. No entries are being collected.</div></div>
+    </section>
+  </main>
+  <footer><div class="wrap"><div class="footer-top"><a class="brand" href="#top"><span class="brand-mark">M</span><span>MARZ TALENT</span></a><div class="footer-copy">An emerging talent platform by MARZ TECHNOLOGIES.</div><div class="footer-links"><a href="#paths">Participation</a><a href="#about">Our approach</a><a href="#launch">Launch status</a></div></div><div class="footnote">Marz Talent is in development. This preview does not accept applications, uploads, or payments. All entry requirements and permissions will be provided before participation opens.</div></div></footer>
+  <script>
+    const toggle=document.querySelector('.menu-toggle');const links=document.querySelector('.nav-links');toggle.addEventListener('click',()=>{const open=links.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Close navigation':'Open navigation');toggle.textContent=open?'×':'☰'});links.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{links.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open navigation');toggle.textContent='☰'}));
+  </script>
+</body>
+</html>
